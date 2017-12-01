@@ -6,3 +6,4 @@ one day if I regret not doing something in APL or Lisp.
 [Previously.](https://github.com/tokenrove/advent-of-code-2016)
 
 - [1](day1.fut): [Futhark](http://futhark-lang.org)
+  - `s ← "123123" ⋄ +/⍎¨"0",s/⍨s=s⌽⍨2÷⍨⍴s` in APL
