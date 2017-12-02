@@ -7,3 +7,6 @@ one day if I regret not doing something in APL or Lisp.
 
 - [1](day1.fut): [Futhark](http://futhark-lang.org)
   - `s ← "123123" ⋄ +/⍎¨"0",s/⍨s=s⌽⍨2÷⍨⍴s` in APL
+- [2](day2.rb): [Ruby](https://www.ruby-lang.org/)
+  - `+/ ((#~(=>.))@(#~(1&~:))@,@(%/]))"1 is` in J
+
