@@ -9,4 +9,7 @@ one day if I regret not doing something in APL or Lisp.
   - `s ← "123123" ⋄ +/⍎¨"0",s/⍨s=s⌽⍨2÷⍨⍴s` in APL
 - [2](day2.rb): [Ruby](https://www.ruby-lang.org/)
   - `+/ ((#~(=>.))@(#~(1&~:))@,@(%/]))"1 is` in J
+- [3](day3.fs): [F#](http://fsharp.org/)
+  - Also [in CL](day3.lisp).  Wanted a language with both generators
+    and complex numbers for this; surprisingly hard ask.
 
