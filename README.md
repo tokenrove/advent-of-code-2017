@@ -12,4 +12,6 @@ one day if I regret not doing something in APL or Lisp.
 - [3](day3.fs): [F#](http://fsharp.org/)
   - Also [in CL](day3.lisp).  Wanted a language with both generators
     and complex numbers for this; surprisingly hard ask.
+- [4](day4.scm): [Guile Scheme](https://www.gnu.org/s/guile)
+  - `sum(1 for l in f if len({''.join(sorted(w)) for w in l.split()}) == len(l.split()))`
 
