@@ -32,3 +32,7 @@ let adjacency_values () =
     seq { for (s,d) in Seq.tail (Seq.zip steps directions) do yield! inner s d }
 
 let part_2 n = adjacency_values () |> Seq.skipWhile ((>=)n) |> Seq.head
+
+[<EntryPoint>]
+let main [|v|] = let v = int v in
+    printfn "part 1: %g\npart 2: %d\n" (part_1 v) (part_2 v); 0
