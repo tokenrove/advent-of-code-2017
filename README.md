@@ -14,4 +14,6 @@ one day if I regret not doing something in APL or Lisp.
     and complex numbers for this; surprisingly hard ask.
 - [4](day4.scm): [Guile Scheme](https://www.gnu.org/s/guile)
   - `sum(1 for l in f if len({''.join(sorted(w)) for w in l.split()}) == len(l.split()))`
+- [5](day5.s): bootable x86 asm using `BOUND` instruction
+  - `for (size_t i = 0; i < N; ++n) i += j[i] <3 ? j[i]++ : j[i]--;`
 

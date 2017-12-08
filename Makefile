@@ -17,3 +17,13 @@ day3: day3.exe day3.in
 
 day4: day4.scm day4.in
 	guile day4.scm
+
+day5.data.s: day5.in
+	sed 's/^/dw /' day5.in > day5.data.s
+
+day5.img: day5.s day5.data.s
+	nasm -f bin day5.s -o day5.img
+
+
+day5: day5.img
+	qemu-system-i386 -drive file=day5.img,index=0,media=disk,format=raw
