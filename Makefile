@@ -24,6 +24,9 @@ day5.data.s: day5.in
 day5.img: day5.s day5.data.s
 	nasm -f bin day5.s -o day5.img
 
-
 day5: day5.img
 	qemu-system-i386 -drive file=day5.img,index=0,media=disk,format=raw
+
+day6: day6.st day6.in
+	gst day6.st
+
