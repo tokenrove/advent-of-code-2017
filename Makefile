@@ -1,3 +1,4 @@
+FACTOR=$$HOME/build/factor/factor
 
 .PHONY: help
 help:
@@ -32,4 +33,7 @@ day6: day6.st day6.in
 
 day7: day7.pl day7.in
 	swipl -t main -q day7.pl
+
+day8: day8.factor day8.in
+	$(FACTOR) day8.factor
 
