@@ -1,0 +1,20 @@
+procedure garbage()
+    local c, count; count := 0
+    while case move(1) of {
+        ">": return count
+        "!": move(1)
+        default: count +:= 1
+    }
+end
+
+procedure main()
+    local depth, score, gcount, c
+    depth := 0; score := 0; gcount := 0
+    read(open("day9.in")) ? while c := move(1) do case c of {
+        "{": depth +:= 1
+        "}": { score +:= depth; depth -:= 1; }
+        "<": gcount +:= garbage()
+    }
+    write(score)
+    write(gcount)
+end

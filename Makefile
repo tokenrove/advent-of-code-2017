@@ -37,3 +37,5 @@ day7: day7.pl day7.in
 day8: day8.factor day8.in
 	$(FACTOR) day8.factor
 
+day9: day9.icn day9.in
+	icon day9.icn
