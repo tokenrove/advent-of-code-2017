@@ -30,3 +30,6 @@ day5: day5.img
 day6: day6.st day6.in
 	gst day6.st
 
+day7: day7.pl day7.in
+	swipl -t main -q day7.pl
+

@@ -17,4 +17,5 @@ one day if I regret not doing something in APL or Lisp.
 - [5](day5.s): bootable x86 asm using `BOUND` instruction
   - `for (size_t i = 0; i < N; ++n) i += j[i] <3 ? j[i]++ : j[i]--;`
 - [6](day6.st): [GNU Smalltalk](http://smalltalk.gnu.org/)
+- [7](day7.pl): [SWI Prolog](http://www.swi-prolog.org/)
 
