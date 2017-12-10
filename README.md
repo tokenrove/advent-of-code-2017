@@ -3,6 +3,10 @@ My goal, like last year, is to do each day in a different language.
 We'll see what happens.  I might go back and do multiple solutions for
 one day if I regret not doing something in APL or Lisp.
 
+I should add the disclaimer that many of these solutions are not
+idiomatic in the languages chosen.  Sometimes because I'm unaware of
+the conventions, and sometimes because I'm actively defying them.
+
 [Previously.](https://github.com/tokenrove/advent-of-code-2016)
 
 - [1](day1.fut): [Futhark](http://futhark-lang.org)
