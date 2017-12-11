@@ -25,3 +25,30 @@ the conventions, and sometimes because I'm actively defying them.
 - [8](day8.factor): [Factor](http://factorcode.org/)
 - [9](day9.icn): [Icon](https://www2.cs.arizona.edu/icon/)
 
+Some of the discussion around this lead to demoing some of these as
+(excessively-unPythonic) Python list comprehensions:
+
+```python
+with open('day1.in') as f: ds = [int(c) for c in f.readline().strip()]
+r = 1 # or len(ds)/2 for part 2
+sum(a for (a,b) in zip(ds, ds[r:] + [ds[:r]]) if a == b)
+```
+
+```python
+with open('day2.in') as f: ls = [[int(i) for i in line.strip().split()] for line in f]
+sum(max(row)-min(row) for row in ls)
+sum([q//d for q in row for d in row if q != d and 0 == q % d][0] for row in ls)
+```
+
+``` python
+with open('day4.in') as f: sum(1 for l in f if len(set(l.split())) == len(l.split()))
+with open('day4.in') as f: sum(1 for l in f if len({''.join(sorted(w)) for w in l.split()}) == len(l.split()))
+```
+
+``` python
+>>> with open("day5.in") as f: jumps = [int(i) for i in f]
+>>> i,n = 0,0
+>>> while 0 <= i < len(jumps): j = i+jumps[i]; jumps[i] = jumps[i] + (1 if jumps[i] < 3 else -1); n += 1; i = j
+>>> print(n)
+```
+
